@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="por-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart 64</title>
+</head>
+<body>
+    <header>
+        <h1> Mario Kart</h1>
+    </header>
+
+    <style>
+
+            @font-face {
+    font-family:'mayrokart';
+    src: url(fonts/MayroKartRetro-Regular.ttf);
+}
+
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ff6c06;
+        color:white;
+    }
+
+    header{
+        height: 100px;
+        text-align: center;
+        border-bottom: 3px solid #ecd51a; /*Borda= Border / Bottom= Parte debeixo da borda*/
+        font-family: mayrokart; 
+    }
+
+    header h1{
+        color: #ecd51a;
+        font-size: 70px;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover{
+        color:#fa9f5e;
+    }
+
+     .card{
+        background-color: #db5f06;
+        width: 550px;
+
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        
+      
+    }
+
+    .card img{
+        width: 550px;
+        height: 450px;
+        border-radius: 10px;
+    }
+
+    .card h3{
+        color: #ffffff;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+     #game{
+        display: flex; /*Faz ficar flexível */
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .btn-game{
+
+        margin-top: 20px;   
+        background-color: #ff6c06;
+        color: black;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration:none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .btn-game:hover{
+
+        background-color:#db5f06 ;
+        color: #ffffff;
+        box-shadow: 0 0 15px #ff6c06;
+        transform: translate(-2px);
+    }
+
+    .btn-game:active{
+
+        transform: scale(0.95);
+    }
+
+   
+    </style>
+
+    <nav>
+    <a href="./home.html">Início</a>
+    <a href="./home.html#jogos">Jogos</a>
+    <a href="./home.html#ranking">Ranking</a>
+    <a href="./longin.html">Sair</a>
+    </nav>
+
+    <section id="game">
+
+     <div class="card">
+            
+        <img src="./img/mariosuper.png" alt="Mario Kart 64">
+        <a href="https://www.youtube.com/watch?v=AW_iV-n5PvA" target="_blank" class="btn-game">Jogar</a>
+        <p>Corra em pistas icônicas e desafie seus amigos em batalhas inesquecíveis.</p>
+        </div>
+
+        </section>
+
+
+</body>
+</html>

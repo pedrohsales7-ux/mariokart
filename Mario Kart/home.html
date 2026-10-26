@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="por-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GameZone</title>
+
+    <style>
+
+    @font-face {
+    font-family:'mayro';
+    src: url(fonts/MayroKartRetro-Regular.ttf);
+}
+
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ff6c06;
+        color:white;
+    }
+
+    header{
+        height: 100px;
+        text-align: center;
+        border-bottom: 3px solid #ecd51a; /*Borda= Border / Bottom= Parte debeixo da borda*/
+        font-family: mayro; 
+    }
+
+    header h1{
+        color: #ecd51a;
+        font-size: 70px;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover{
+        color:#fa9f5e;
+    }
+
+    .banner{
+        text-align: center;
+        padding: 40px;
+    }
+
+    .banner h1{
+        color: #ecd51a;
+    }
+
+    .jogos{
+        display: flex; /*Faz ficar flexível */
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .card{
+        background-color: #db5f06;
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .card img{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .card:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+       }
+
+    .card h3{
+        color: #ffffff;
+    }
+
+    footer{
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        background-color: #ba5004;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1> Mario Kart</h1>
+    </header>
+
+    <nav>
+    <a href="#">Início</a>
+    <a href="#">Jogos</a>
+    <a href="#">A Nintendo</a>
+    <a href="#">Sair</a>
+    </nav>
+
+    <section class="banner">
+        <h1> Bem-Vindo ao Circuito! </h1>
+        <p> Prepare os seus itens, solte o turbo e desafie os seus amigos. </p>
+    </section>
+
+    <section class="jogos">
+
+        <div class="card">
+        <img src="./img/supermario.png" alt="Super Mario Kart">
+        <h3>Super Mario Kart</h3>
+        <p>O clássico que deu início às corridas malucas do Reino dos Cogumelos.<p>
+        </div>
+
+        <div class="card">
+        <img src="/img/mariokart64.png" alt="Mario Kart 64">
+        <h3>Mario Kart 64</h3>
+        <p>Corra em pistas icônicas e desafie seus amigos em batalhas inesquecíveis.</p>
+        </div>
+
+        <div class="card">
+        <img src="./img/mariosuper.png" alt="Mario Kart: Super Circuit">
+        <h3>Mario Kart: Super Circuit</h3>
+        <p>Velocidade e diversão portátil com novas pistas e desafios.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; Mario Kart, 2026
+    </footer>
+
+    
+</body>
+</html>

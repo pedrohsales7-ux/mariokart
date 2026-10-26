@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="por-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GameZone</title>
+
+    <style>
+
+    @font-face {
+    font-family:'mayrokart';
+    src: url(fonts/MayroKartRetro-Regular.ttf);
+}
+
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ff6c06;
+        color:white;
+    }
+
+    header{
+        height: 100px;
+        text-align: center;
+        border-bottom: 3px solid #ecd51a; /*Borda= Border / Bottom= Parte debeixo da borda*/
+        font-family: mayrokart; 
+    }
+
+    header h1{
+        color: #ecd51a;
+        font-size: 70px;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover{
+        color:#fa9f5e;
+    }
+
+    #banner{
+        text-align: center;
+        padding: 40px;
+    }
+
+    #banner h1{
+        color: #ecd51a;
+    }
+
+    #banner img{
+        width: 500px;
+    }
+
+    #jogos{
+        display: flex; /*Faz ficar flexível */
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .card{
+        background-color: #db5f06;
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .card img{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .card h3{
+        color: #ffffff;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    #ranking{
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#ranking h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ecd51a;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+#ranking h2{
+    color: #ecd51a;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* TABELAS */
+
+#ranking table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #db5f06;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+#ranking th{
+    background-color: #ecd51a;
+    color: #ba5004;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#ranking td{
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+#ranking tr:last-child td{
+    border-bottom: none;
+}
+
+/* Efeito hover */
+
+#ranking tbody tr{
+    transition: 0.25s;
+}
+
+#ranking tbody tr:hover{
+    background-color: #f57b1f;
+    transform: scale(1.01);
+}
+
+/* Medalhas */
+
+.gold{
+    color: gold;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.silver{
+    color: silver;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.bronze{
+    color: #cd7f32;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Top 3 da tabela principal */
+
+#ranking tbody tr:nth-child(1){
+    background: rgba(255,215,0,0.18);
+}
+
+#ranking tbody tr:nth-child(2){
+    background: rgba(192,192,192,0.15);
+}
+
+#ranking tbody tr:nth-child(3){
+    background: rgba(205,127,50,0.15);
+
+}
+
+    footer{
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        background-color: #ba5004;
+    }
+
+    .card h3 a{
+
+        text-decoration: none;
+        color:inherit
+    }
+
+    .card h3 a:hover{
+
+        color: #fa9f5e;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1> Mario Kart</h1>
+    </header>
+
+    <nav>
+    <a href="#banner">Início</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#ranking">Ranking</a>
+    <a href="./longin.html">Sair</a>
+    </nav>
+
+    <section id="banner">
+        <h1> Bem-Vindo ao Circuito! </h1>
+        <p> Prepare os seus itens, solte o turbo e desafie os seus amigos. </p>
+        <img src="./img/banner.png" alt="Banner">
+    </section>
+
+    <section id="jogos">
+
+        <div class="card"> 
+        <img src="./img/supermario.png" alt="Super Mario Kart">
+        <h3>
+            <a href="./SuperKart.html">Super Mario Kart</a>
+        </h3>
+        <p>O clássico que deu início às corridas malucas do Reino dos Cogumelos.<p>
+        </div> 
+    
+
+        <div class="card">
+            
+        <img src="/img/mariokart64.png" alt="Mario Kart 64">
+        <h3>
+            <a href="./Mario64.html">Mario Kart 64</a>
+        </h3>
+        <p>Corra em pistas icônicas e desafie seus amigos em batalhas inesquecíveis.</p>
+        </div>
+
+        <div class="card">
+        <img src="./img/mariosuper.png" alt="Mario Kart: Super Circuit">
+         <h3>
+            <a href="./Mariocircuit.html">Mario Kart: Super Circuit</a>
+        </h3>
+        <p>Velocidade e diversão portátil com novas pistas e desafios.</p>
+        </div>
+
+    </section>
+
+    <section id="ranking">
+
+        <h1>Ranking dos Melhores Jogos de Corrida</h1>
+
+<h2>Top 15 Jogos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Posição</th>
+            <th>Jogo</th>
+            <th>Destaque</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Forza Horizon 5</td><td>Mundo aberto enorme e gráficos incríveis</td></tr>
+        <tr><td>2</td><td>Assetto Corsa Competizione</td><td>Simulação extremamente realista</td></tr>
+        <tr><td>3</td><td>iRacing</td><td>Referência em corridas online</td></tr>
+        <tr><td>4</td><td>BeamNG.drive</td><td>Melhor física de colisões</td></tr>
+        <tr><td>5</td><td>F1 25</td><td>Experiência oficial da Fórmula 1</td></tr>
+        <tr><td>6</td><td>Assetto Corsa</td><td>Grande comunidade de mods</td></tr>
+        <tr><td>7</td><td>Automobilista 2</td><td>Ótima física e variedade</td></tr>
+        <tr><td>8</td><td>Dirt Rally 2.0</td><td>Rali desafiador e realista</td></tr>
+        <tr><td>9</td><td>EA Sports WRC</td><td>Melhor opção atual de rali</td></tr>
+        <tr><td>10</td><td>Need for Speed Unbound</td><td>Corridas urbanas e personalização</td></tr>
+        <tr><td>11</td><td>The Crew Motorfest</td><td>Mapa grande e diversos veículos</td></tr>
+        <tr><td>12</td><td>Project CARS 2</td><td>Boa variedade de categorias</td></tr>
+        <tr><td>13</td><td>Wreckfest</td><td>Destruição automotiva divertida</td></tr>
+        <tr><td>14</td><td>Hot Wheels Unleashed 2</td><td>Arcade rápido e criativo</td></tr>
+        <tr><td>15</td><td>Trackmania</td><td>Competitivo e focado em habilidade</td></tr>
+    </tbody>
+</table>
+
+<h2>Top 5 Geral</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Posição</th>
+            <th>Jogo</th>
+            <th>Motivo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="gold">1º</td>
+            <td>Forza Horizon 5</td>
+            <td>Melhor equilíbrio entre diversão e realismo</td>
+        </tr>
+        <tr>
+            <td class="silver">2º</td>
+            <td>Assetto Corsa Competizione</td>
+            <td>Melhor simulador GT</td>
+        </tr>
+        <tr>
+            <td class="bronze">3º</td>
+            <td>iRacing</td>
+            <td>Melhor para competição online</td>
+        </tr>
+        <tr>
+            <td>4º</td>
+            <td>BeamNG.drive</td>
+            <td>Melhor física automotiva</td>
+        </tr>
+        <tr>
+            <td>5º</td>
+            <td>F1 25</td>
+            <td>Melhor experiência de Fórmula 1</td>
+        </tr>
+    </tbody>
+</table>
+
+    </section>
+
+    <footer>
+        &copy; Mario Kart, 2026
+    </footer>
+
+    
+</body>
+</html>
